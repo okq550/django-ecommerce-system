@@ -4,6 +4,8 @@ python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 
+python manage.py collectstatic --noinput && python manage.py runserver 0.0.0.0:8000
+
 
 1. mkdir django_project_root/your_app_name
 2. python manage.py startapp your_app_name django_project_root/your_app_name
