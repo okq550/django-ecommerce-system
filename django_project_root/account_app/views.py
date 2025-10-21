@@ -4,4 +4,4 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, "category_app/index.html")
+    return render(request, "account_app/index.html")
