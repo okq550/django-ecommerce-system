@@ -68,6 +68,7 @@ INSTALLED_APPS = [
     "django_project_root.home_app",
     "django_project_root.category_app",
     "django_project_root.account_app",
+    "django_project_root.store_app",
 ]
 
 MIDDLEWARE = [
@@ -93,6 +94,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "django_project_root.category_app.context_processors.menu_links",
             ],
         },
     },

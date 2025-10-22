@@ -24,9 +24,13 @@ from django.urls import include, path
 urlpatterns = (
     [
         path("admin/", admin.site.urls),
-        path("", include("django_project_root.home_app.urls")),
+        path(
+            "",
+            include("django_project_root.home_app.urls"),
+        ),
         path("category/", include("django_project_root.category_app.urls")),
         path("account/", include("django_project_root.account_app.urls")),
+        path("store/", include("django_project_root.store_app.urls")),
     ]
     + debug_toolbar_urls()
     + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
