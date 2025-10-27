@@ -10,8 +10,12 @@ python manage.py collectstatic --noinput && python manage.py runserver 0.0.0.0:8
 1. mkdir django_project_root/your_app_name
 2. python manage.py startapp your_app_name django_project_root/your_app_name
 
-3. Modify configuration_root/urls.py => INSTALLED_APPS  = [
-    path('your_app_name/', include('django_project_root.your_app_name.urls')),
+3. Modify configuration_root/settings.py => INSTALLED_APPS  = [
+    "django_project_root.your_app_name",
+]
+
+3. Modify configuration_root/urls.py => urlpattern  = [
+    path("your_app_name/", include("django_project_root.your_app_name.urls")),
 ]
 
 4. Modify your_app_name/apps.py => 

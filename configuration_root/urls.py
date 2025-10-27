@@ -31,6 +31,7 @@ urlpatterns = (
         path("category/", include("django_project_root.category_app.urls")),
         path("account/", include("django_project_root.account_app.urls")),
         path("store/", include("django_project_root.store_app.urls")),
+        path("cart/", include("django_project_root.cart_app.urls")),
     ]
     + debug_toolbar_urls()
     + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

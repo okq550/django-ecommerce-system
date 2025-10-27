@@ -69,6 +69,7 @@ INSTALLED_APPS = [
     "django_project_root.category_app",
     "django_project_root.account_app",
     "django_project_root.store_app",
+    "django_project_root.cart_app",
 ]
 
 MIDDLEWARE = [

@@ -29,7 +29,7 @@
                 </aside>
                 <main class="col-md-6 border-left">
 
-                    <form action="#" method="POST">
+                    <form action="{% url 'cart_app:add_cart' %}" method="POST">
                         {% csrf_token %}
                         <article class="content-body">
 
