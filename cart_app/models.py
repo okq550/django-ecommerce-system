@@ -1,6 +1,6 @@
 from django.db import models
 
-from django_project_root.store_app.models import Product
+from store_app.models import Product
 
 
 # Create your models here.

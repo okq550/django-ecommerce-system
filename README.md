@@ -7,21 +7,21 @@ pip install -r requirements.txt
 python manage.py collectstatic --noinput && python manage.py runserver 0.0.0.0:8000
 
 
-1. mkdir django_project_root/your_app_name
-2. python manage.py startapp your_app_name django_project_root/your_app_name
+1. mkdir your_app_name
+2. python manage.py startapp your_app_name
 
 3. Modify configuration_root/settings.py => INSTALLED_APPS  = [
-    "django_project_root.your_app_name",
+    "your_app_name",
 ]
 
 3. Modify configuration_root/urls.py => urlpattern  = [
-    path("your_app_name/", include("django_project_root.your_app_name.urls")),
+    path("your_app_name/", include("your_app_name.urls")),
 ]
 
 4. Modify your_app_name/apps.py => 
-name = 'django_project_root.your_app_name'
+name = 'your_app_name'
 
-4. vi django_project_root/your_app_name/urls.py => 
+4. vi your_app_name/urls.py => 
 
 from django.urls import path
 from . import views
@@ -34,7 +34,7 @@ urlpatterns = [
 
 5. Create Template Structure => 
 
-mkdir -p django_project_root/templates/your_app_name
+mkdir -p templates/your_app_name
 
 6. Create Base Template =>
 

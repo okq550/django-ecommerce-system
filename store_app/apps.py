@@ -3,4 +3,4 @@ from django.apps import AppConfig
 
 class StoreAppConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
-    name = "django_project_root.store_app"
+    name = "store_app"

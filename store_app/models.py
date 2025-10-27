@@ -1,7 +1,7 @@
 from django.db import models
 from django.urls import reverse
 
-from django_project_root.category_app.models import Category
+from category_app.models import Category
 
 
 # Create your models here.

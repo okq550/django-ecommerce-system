@@ -65,11 +65,11 @@ INSTALLED_APPS = [
     "debug_toolbar",
     # 'rest_framework',
     # 'corsheaders'
-    "django_project_root.home_app",
-    "django_project_root.category_app",
-    "django_project_root.account_app",
-    "django_project_root.store_app",
-    "django_project_root.cart_app",
+    "home_app",
+    "category_app",
+    "account_app",
+    "store_app",
+    "cart_app",
 ]
 
 MIDDLEWARE = [
@@ -88,14 +88,14 @@ ROOT_URLCONF = "configuration_root.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR / "django_project_root/templates/"],
+        "DIRS": [BASE_DIR / "templates/"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
-                "django_project_root.category_app.context_processors.menu_links",
+                "category_app.context_processors.menu_links",
             ],
         },
     },
@@ -165,9 +165,9 @@ STATIC_URL = "static/"
 
 # Static files location
 STATIC_ROOT = BASE_DIR / "staticfiles/"
-# STATIC_ROOT = BASE_DIR / "django_project_root/static/"
+# STATIC_ROOT = BASE_DIR / "static/"
 STATICFILES_DIRS = [
-    BASE_DIR / "django_project_root/static/",
+    BASE_DIR / "static/",
 ]
 
 # Default primary key field type
@@ -177,7 +177,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Media files
 MEDIA_URL = "/media/"
-MEDIA_ROOT = BASE_DIR / "django_project_root/media/"
+MEDIA_ROOT = BASE_DIR / "media/"
 
 # CORS
 # CORS_ALLOW_ALL_ORIGINS = True

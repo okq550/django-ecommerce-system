@@ -1,6 +1,6 @@
 from django.shortcuts import get_object_or_404, render
 
-from django_project_root.category_app.models import Category
+from category_app.models import Category
 
 from .models import Product
 

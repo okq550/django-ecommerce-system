@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
-from django_project_root.category_app.models import Category
-from django_project_root.store_app.models import Product
+from category_app.models import Category
+from store_app.models import Product
 
 
 def index(request):
